@@ -11,6 +11,7 @@ O backend do projeto é construído com as seguintes tecnologias:
 - MySQL
 - Cors
 - Nodemon (para desenvolvimento)
+- dotenv
 
 ### Configuração do Backend
 
@@ -22,7 +23,7 @@ Para configurar e executar o backend, siga estas etapas:
 cd backend
 
 3. Instale as dependências do projeto:
-npm install
+npm install cors express mysql nodemon dotenv
 
 4. Configure as variáveis de ambiente no arquivo `.env` com as informações do seu banco de dados, como `DB_HOST`, `DB_USER`, `DB_PASSWORD` e `DB_NAME`.
 
