@@ -1,4 +1,4 @@
-import { db } from "../db.js";
+import db from "../db.js";
 
 export const getUsers = (req, res) => {
   const q = "SELECT * FROM usuarios";
@@ -51,6 +51,6 @@ export const deleteUser = (req, res) => {
   db.query(q, [req.params.id], (err) => {
     if(err) return res.json(err)
 
-    return res.status(200).json("Usuarios deletado com sucesso")
+    return res.status(200)
   })
 }
